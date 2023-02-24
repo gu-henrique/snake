@@ -27,15 +27,15 @@ const changeDirection = e => {
     // Changing velocity value based on key press
     if(e.key === "ArrowUp" && velocityY != 1) {
         velocityX = 0;
-        velocityY = -3;
+        velocityY = -1.5;
     } else if(e.key === "ArrowDown" && velocityY != -1) {
         velocityX = 0;
-        velocityY = 3;
+        velocityY = 1.5;
     } else if(e.key === "ArrowLeft" && velocityX != 1) {
-        velocityX = -3;
+        velocityX = -1.5;
         velocityY = 0;
     } else if(e.key === "ArrowRight" && velocityX != -1) {
-        velocityX = 3;
+        velocityX = 1.5;
         velocityY = 0;
     }
 }
